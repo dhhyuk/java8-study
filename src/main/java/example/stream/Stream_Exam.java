@@ -1,8 +1,11 @@
 package example.stream;
 
+import example.code_handover.Apple;
+
 import java.util.*;
 
 import static java.util.stream.Collectors.groupingBy;
+import static java.util.stream.Collectors.toList;
 
 /**
  * Created by gimdonghyeog on 2017. 8. 31..
@@ -46,5 +49,12 @@ public class Stream_Exam {
                 System.out.println(transaction.toString());
             }
         }
+
+
+        final List<Apple> inventory = Arrays.asList(new Apple("green", 100), new Apple("red", 200), new Apple("green", 1000), new Apple("green", 300));
+        // 순차 처리
+        final List<Apple> heavyApples1 = inventory.stream().filter(a -> a.getWeight() > 150).collect(toList());
+        // 병렬 처리
+        final List<Apple> heavyApples2 = inventory.parallelStream().filter(a -> a.getWeight() > 150).collect(toList());
     }
 }
