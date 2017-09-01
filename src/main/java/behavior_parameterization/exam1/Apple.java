@@ -1,7 +1,7 @@
-package example.code_handover;
+package behavior_parameterization.exam1;
 
 /**
- * Created by gimdonghyeog on 2017. 8. 31..
+ * Created by gimdonghyeog on 2017. 9. 1..
  */
 class Apple {
     private String color;

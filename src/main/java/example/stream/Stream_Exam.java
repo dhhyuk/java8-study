@@ -50,11 +50,23 @@ public class Stream_Exam {
             }
         }
 
+        System.out.println();
+
 
         final List<Apple> inventory = Arrays.asList(new Apple("green", 100), new Apple("red", 200), new Apple("green", 1000), new Apple("green", 300));
         // 순차 처리
         final List<Apple> heavyApples1 = inventory.stream().filter(a -> a.getWeight() > 150).collect(toList());
+        System.out.println("Sequential List");
+        for (Apple apple : heavyApples1) {
+            System.out.println(apple.toString());
+        }
+        System.out.println();
+
         // 병렬 처리
         final List<Apple> heavyApples2 = inventory.parallelStream().filter(a -> a.getWeight() > 150).collect(toList());
+        System.out.println("Parallel List");
+        for (Apple apple : heavyApples2) {
+            System.out.println(apple.toString());
+        }
     }
 }
