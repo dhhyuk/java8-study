@@ -3,7 +3,7 @@ package behavior_parameterization.exam1;
 /**
  * Created by gimdonghyeog on 2017. 9. 1..
  */
-class Apple {
+public class Apple {
     private String color;
     private int weight;
 

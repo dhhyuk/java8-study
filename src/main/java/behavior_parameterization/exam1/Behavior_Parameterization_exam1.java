@@ -3,6 +3,9 @@ package behavior_parameterization.exam1;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.function.Predicate;
 
 /**
  * Created by gimdonghyeog on 2017. 9. 1..
@@ -14,6 +17,29 @@ public class Behavior_Parameterization_exam1 {
 
         final List<Apple> greenApples = filterApplesByColor(inventory, "green");
         final List<Apple> redApples = filterApplesByColor(inventory, "red");
+
+        final List<Apple> colorFilteredApplesByPredicate = filterApplesUsingApplePredicate(inventory, new AppleGreenColorPredicate());
+
+        System.out.println("Print Weight");
+        prettyPrintApple(inventory, new ApplePrintWeightPredicate());
+        System.out.println("Print Color");
+        prettyPrintApple(inventory, new ApplePrintColorPredicate());
+
+        // Anonymous Class
+        filterApplesUsingApplePredicate(inventory, new ApplePredicate() {
+            @Override
+            public boolean test(Apple apple) {
+                return "red".equals(apple.getColor());
+            }
+        });
+
+        // Lambda expression
+        filterApplesUsingApplePredicate(inventory, apple -> "red".equals(apple.getColor()));
+
+        // BehaviorParameterization
+        filter(inventory, apple -> "red".equals(apple.getColor()));
+
+        filterPrint(inventory, apple -> apple.getWeight() > 100, apple -> System.out.println(apple.getWeight()));
     }
 
     /**
@@ -87,19 +113,75 @@ public class Behavior_Parameterization_exam1 {
         boolean test(Apple apple);
     }
 
-    protected class AppleHeavyWeightPredicate implements ApplePredicate {
+    protected static class AppleHeavyWeightPredicate implements ApplePredicate {
         public boolean test(Apple apple) {
             return apple.getWeight() > 150;
         }
     }
 
-    protected class AppleGreenColorPredicate implements ApplePredicate {
+    protected static class AppleGreenColorPredicate implements ApplePredicate {
         public boolean test(Apple apple) {
             return "green".equals(apple.getColor());
         }
     }
 
     /**
-     * 
+     * 전략 디자인 패턴을 사용해서 각 알고리즘을 캡슐화시킨 뒤
+     * 런타임에 알고리즘을 선택하는 기법을 사용하여
+     * ApplePredicate를 상속받은 클래스를 받아서
+     * 클래스의 알고리즘을 사용하여서 필터 적용
      */
+    protected static List<Apple> filterApplesUsingApplePredicate(List<Apple> inventory, ApplePredicate p) {
+        final List<Apple> result = new ArrayList<>();
+        for (Apple apple : inventory) {
+            if (p.test(apple)) {
+                result.add(apple);
+            }
+        }
+        return result;
+    }
+
+    protected interface ApplePrintPredicate {
+        String output(Apple apple);
+    }
+
+    protected static class ApplePrintWeightPredicate implements ApplePrintPredicate {
+        @Override
+        public String output(Apple apple) {
+            return "weight : " + apple.getWeight();
+        }
+    }
+
+    protected static class ApplePrintColorPredicate implements ApplePrintPredicate {
+
+        @Override
+        public String output(Apple apple) {
+            return "color : " + apple.getColor();
+        }
+    }
+
+    protected static void prettyPrintApple(List<Apple> inventory, ApplePrintPredicate printPredicate) {
+        for (Apple apple : inventory) {
+            final String output = printPredicate.output(apple);
+            System.out.println(output);
+        }
+    }
+
+    public static <T> List<T> filter(List<T> list, Predicate<T> p) {
+        final List<T> result = new ArrayList<>();
+        for (T e : list) {
+            if (p.test(e)) {
+                result.add(e);
+            }
+        }
+        return result;
+    }
+
+    public static <T> void filterPrint(List<T> list, Predicate<T> p, Consumer<T> print) {
+        for (T e: list) {
+            if (p.test(e)) {
+                print.accept(e);
+            }
+        }
+    }
 }
