@@ -1,6 +1,7 @@
 package stream;
 
 import java.util.*;
+import java.util.function.Function;
 
 import static java.util.stream.Collectors.toList;
 
