@@ -243,8 +243,41 @@ public class StreamExam2 {
                 .filter(x -> x % 3 == 0)
                 .findFirst();
         System.out.println(firstSquareDivisibleByThree);
-        System.out.println("");
+        System.out.println();
 
 
+        //리듀싱
+
+        /**
+         * numbers의 값을 모두 더하는 예제
+         */
+        final int numbersSum1 = numbers.stream().reduce(0, Integer::sum);
+        System.out.println(numbersSum1);
+
+        /**
+         * 스트림에 아무요소도 없을 수 있음으로 Optional를 반환
+         */
+        final Optional<Integer> numbersSum2 = numbers.stream().reduce(Integer::sum);
+        System.out.println(numbersSum2);
+
+        /**
+         * numbers중에 최댓값을 반환
+         */
+        final Optional<Integer> numbersMax = numbers.stream().reduce(Integer::max);
+        System.out.println(numbersMax);
+
+        /**
+         * numbers중에 최솟값을 반환
+         */
+        final Optional<Integer> numbersMin = numbers.stream().reduce(Integer::min);
+        System.out.println(numbersMin);
+
+
+        /**
+         * Quiz
+         * Menu의 갯수를 구하는 것을 map과 reduce를 이용해서 구하기
+         */
+        final int menuCount = menu.stream().map(d -> 1).reduce(0, (a, b) -> a + b);
+        System.out.println(menuCount);
     }
 }

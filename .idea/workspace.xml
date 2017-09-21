@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6206b4cc-d528-4418-8e4e-65e747e745b8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/stream/StreamExam2$Dish$Type.class" afterPath="$PROJECT_DIR$/build/classes/main/stream/StreamExam2$Dish$Type.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/stream/StreamExam2$Dish.class" afterPath="$PROJECT_DIR$/build/classes/main/stream/StreamExam2$Dish.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/stream/StreamExam2.class" afterPath="$PROJECT_DIR$/build/classes/main/stream/StreamExam2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/stream/StreamExam1.java" afterPath="$PROJECT_DIR$/src/main/java/stream/StreamExam1.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/stream/StreamExam2.java" afterPath="$PROJECT_DIR$/src/main/java/stream/StreamExam2.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -38,7 +34,22 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="13545">
               <caret line="949" column="35" lean-forward="false" selection-start-line="949" selection-start-column="35" selection-end-line="951" selection-end-column="67" />
-              <folding />
+              <folding>
+                <element signature="e#0#51408#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#44628#44629#0" expanded="false" />
+                <element signature="e#44684#44685#0" expanded="false" />
+                <element signature="e#44888#44889#0" expanded="false" />
+                <element signature="e#44974#44975#0" expanded="false" />
+                <element signature="e#45237#45238#0" expanded="false" />
+                <element signature="e#45323#45324#0" expanded="false" />
+                <element signature="e#45701#45702#0" expanded="false" />
+                <element signature="e#45745#45746#0" expanded="false" />
+                <element signature="e#46882#46883#0" expanded="false" />
+                <element signature="e#46925#46926#0" expanded="false" />
+                <element signature="e#46978#46979#0" expanded="false" />
+                <element signature="e#47060#47061#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -48,7 +59,11 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="690">
               <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="88" selection-end-column="5" />
-              <folding />
+              <folding>
+                <element signature="e#0#2870#0" expanded="false" />
+                <element signature="e#2837#2838#0" expanded="false" />
+                <element signature="e#2866#2867#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -59,7 +74,16 @@
             <state relative-caret-position="630">
               <caret line="45" column="64" lean-forward="false" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="64" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1576#1577#0" expanded="false" />
+                <element signature="e#1615#1616#0" expanded="false" />
+                <element signature="e#1664#1665#0" expanded="false" />
+                <element signature="e#1712#1713#0" expanded="false" />
+                <element signature="e#1747#1748#0" expanded="false" />
+                <element signature="e#1782#1783#0" expanded="false" />
+                <element signature="e#1826#1827#0" expanded="false" />
+                <element signature="e#1866#1867#0" expanded="false" />
+                <element signature="e#2048#2049#0" expanded="false" />
+                <element signature="e#2138#2139#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -68,8 +92,8 @@
       <file leaf-file-name="StreamExam2.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/stream/StreamExam2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1202">
-              <caret line="245" column="29" lean-forward="false" selection-start-line="245" selection-start-column="29" selection-end-line="245" selection-end-column="29" />
+            <state relative-caret-position="1179">
+              <caret line="277" column="49" lean-forward="false" selection-start-line="277" selection-start-column="49" selection-end-line="277" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1221,7 +1245,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
           <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="88" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="e#0#2870#0" expanded="false" />
+            <element signature="e#2837#2838#0" expanded="false" />
+            <element signature="e#2866#2867#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1230,7 +1258,16 @@
         <state relative-caret-position="630">
           <caret line="45" column="64" lean-forward="false" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="64" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1576#1577#0" expanded="false" />
+            <element signature="e#1615#1616#0" expanded="false" />
+            <element signature="e#1664#1665#0" expanded="false" />
+            <element signature="e#1712#1713#0" expanded="false" />
+            <element signature="e#1747#1748#0" expanded="false" />
+            <element signature="e#1782#1783#0" expanded="false" />
+            <element signature="e#1826#1827#0" expanded="false" />
+            <element signature="e#1866#1867#0" expanded="false" />
+            <element signature="e#2048#2049#0" expanded="false" />
+            <element signature="e#2138#2139#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1247,14 +1284,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="13545">
           <caret line="949" column="35" lean-forward="false" selection-start-line="949" selection-start-column="35" selection-end-line="951" selection-end-column="67" />
-          <folding />
+          <folding>
+            <element signature="e#0#51408#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#44628#44629#0" expanded="false" />
+            <element signature="e#44684#44685#0" expanded="false" />
+            <element signature="e#44888#44889#0" expanded="false" />
+            <element signature="e#44974#44975#0" expanded="false" />
+            <element signature="e#45237#45238#0" expanded="false" />
+            <element signature="e#45323#45324#0" expanded="false" />
+            <element signature="e#45701#45702#0" expanded="false" />
+            <element signature="e#45745#45746#0" expanded="false" />
+            <element signature="e#46882#46883#0" expanded="false" />
+            <element signature="e#46925#46926#0" expanded="false" />
+            <element signature="e#46978#46979#0" expanded="false" />
+            <element signature="e#47060#47061#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/stream/StreamExam2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1202">
-          <caret line="245" column="29" lean-forward="false" selection-start-line="245" selection-start-column="29" selection-end-line="245" selection-end-column="29" />
+        <state relative-caret-position="1179">
+          <caret line="277" column="49" lean-forward="false" selection-start-line="277" selection-start-column="49" selection-end-line="277" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
